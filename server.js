@@ -1,8 +1,11 @@
-require("dotenv").config();
-let { CLIENTURL } = process.env;
+// require("dotenv").config();
+// let { CLIENTURL } = process.env;
 
 const io = require("socket.io")(3001, {
-  cors: { origin: CLIENTURL, methods: ["GET", "POST"] },
+  cors: {
+    origin: "https://whatsapp-clone-next14.vercel.app/",
+    methods: ["GET", "POST"],
+  },
 });
 
 var connectedUsers = {};
