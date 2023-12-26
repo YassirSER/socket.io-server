@@ -3,7 +3,7 @@
 
 const io = require("socket.io")(8000, {
   cors: {
-    origin: "https://whatsapp-clone-next14.vercel.app/",
+    origin: "*",
     methods: ["GET", "POST"],
   },
 });
